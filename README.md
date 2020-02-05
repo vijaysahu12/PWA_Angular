@@ -40,3 +40,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Firebase And Firestore for enabling offline data sync
     npm i firebase angularfire2
     https://blog.angular.io/improved-querying-and-offline-data-with-angularfirestore-dab8e20a4a06
+
+
+
+## What this app is all about. 
+
+	1. To acheive the PWA.
+	2. To make your app available offline.
+
+## How we acheived the PWA.
+	1. Enabled service worker for angular app using the above given command.
+	2. Create one webapi using .Net Core
