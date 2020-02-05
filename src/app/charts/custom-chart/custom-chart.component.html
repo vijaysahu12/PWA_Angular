@@ -1,0 +1,38 @@
+<!-- <div class="container">
+  <div class="igFrameBar">
+    <div class="igData igData1"></div>
+    <div class="igData igData2"></div>
+    <div class="igData igData3"></div>
+    <div class="igData igData4"></div>
+    <div class="igData igData5"></div>
+    <div class="igData igData6"></div>
+    <div class="igData igData7"></div>
+    <div class="igData igData8"></div>
+    <div class="igData igData9"></div>
+    <div class="igData igData10"></div>
+  </div>
+</div> -->
+
+
+
+<div class="container">
+
+  <div class="igFrameBar"  [@ChartBottomTop]>
+    <div 
+    *ngFor="let bar of ChartData"
+    class="igData"
+    [style.backgroundColor]="bar.bgColor"
+    [style.height]="bar.Height"
+    [style.width]="bar.Width"
+    [style.margin-left]="bar.MarginLeft"
+    >
+    <div class="topValueofBar">{{bar.Height}}</div>
+    <!-- <div class="bottomValueOfBar">{{bar.EmployeeName}}</div> -->
+    </div>
+  </div>
+  <!-- <div class="igFrameBarBottom">
+    <div [style.margin-left]='0' class="EmpNameContainer" *ngFor="let bar of ChartData">
+    {{bar.EmployeeName}}
+    </div>
+  </div> -->
+</div>
