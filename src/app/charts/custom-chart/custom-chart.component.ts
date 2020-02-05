@@ -69,17 +69,39 @@ export class CustomChartComponent implements OnInit {
       Width: 2 + '%',
       bgColor: 'rgb(249, 203, 220)',
       EmployeeName: 'Amit Bhujwal'
-    }
-    ,
+    },
     {
       BarTopValue: 72 + '%',
       Height: 72 + '%',
       MarginLeft: 14 + '%',
       Width: 2 + '%',
+      bgColor: 'pink',
+      EmployeeName: 'Shivangi Rao'
+    },
+    {
+      BarTopValue: 67 + '%',
+      Height: 67 + '%',
+      MarginLeft: 14 + '%',
+      Width: 2 + '%',
+      bgColor: '#ffaeae',
+      EmployeeName: 'Shivangi Rao'
+    },
+    {
+      BarTopValue: 89 + '%',
+      Height: 89 + '%',
+      MarginLeft: 14 + '%',
+      Width: 2 + '%',
       bgColor: 'rgb(252, 238, 189)',
       EmployeeName: 'Shivangi Rao'
+    },
+    {
+      BarTopValue: 62 + '%',
+      Height: 62 + '%',
+      MarginLeft: 14 + '%',
+      Width: 2 + '%',
+      bgColor: 'rgb(179, 179, 179)',
+      EmployeeName: 'Shivangi Rao'
     }
-
   ];
     let calculatedWidth = (100 / this.ChartData.length);
     if (calculatedWidth > 6) {
