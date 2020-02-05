@@ -1,0 +1,134 @@
+.appContainer {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.appHeader {
+  display: flex;
+  height: 50px;
+  background: #b35605;
+  position: fixed;
+  width: 100%;
+}
+
+.appMain {
+  display: flex;
+  margin-top: 50px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.navigation {
+  height: 6%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+
+.navHeading {
+  padding: 10px;
+  text-align: center;
+  font-size: x-large;
+  color: white;
+}
+
+.navigation {
+  height: 6%;
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+}
+
+.navigationButton {
+  width: 60;
+  /* height: 40px; */
+}
+
+.navigationlist {
+  z-index: 99;
+  width: 100%;
+  position: fixed;
+  cursor: pointer;
+  background-color: #222440;
+  color: white;
+  margin-top: 42px;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.navigationlist>li {
+  cursor: pointer;
+  padding: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  list-style-type: none;
+  border-bottom: 0.2px solid black;
+}
+
+.navigationlist>li:hover {
+  background-color: #7b7b7b;
+}
+
+.buttonContainer {
+  float: left;
+  padding-top: 2px;
+  height: 40px;
+}
+
+.sidenav-toggle {
+  height: 40px;
+  border-radius: 4px;
+  border: 0px;
+  background-color: transparent;
+  margin-right: 8px;
+}
+
+.hamburger {
+  width: 21px;
+  height: 3px;
+  background-color: white;
+  margin: 24px 0;
+  position: relative;
+  transition: background .2s ease;
+  float: right;
+}
+
+
+
+.hamburger:after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}
+
+.hamburger:before {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}

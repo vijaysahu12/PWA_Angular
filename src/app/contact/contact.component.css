@@ -1,0 +1,14 @@
+.Container{
+    padding: 4px;
+    line-height: 1.2em;
+    font-weight: 800;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+td
+{
+    padding: 10px;
+
+}

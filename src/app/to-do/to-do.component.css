@@ -1,0 +1,73 @@
+ 
+
+.pageContainer {
+  /* padding: 4px;
+  margin-top: 10%; */
+  height: 100%;
+}
+
+ 
+textarea {
+  width: 100%;
+}
+
+.btnAdd {
+  width: 100%;
+  background-color: #b35605;
+  border-radius: 4px;
+  padding: 1%;
+  color: white;
+  box-shadow: 1px 1px 9px 2px grey;
+}
+
+.taskContainer {
+  width: 100%;
+  padding: 0.2%;
+  margin-bottom: 5px;
+  height: 80%;
+  background-color: rgb(255, 255, 255);
+}
+
+
+main{
+  height: 100%;
+  overflow-y: auto;
+}
+.listOfToDo {
+  padding: 5px;
+  margin-bottom: 5px;
+  height: auto;
+  
+}
+
+.listOfToDo>li {
+  border-radius: 6px;
+  list-style-type: none;
+  padding: 10px;
+  margin-bottom: 9px;
+  /* border-bottom: 1px solid black; */
+  border-left: 3px solid #b35605;
+  border-right: 3px solid #b35605;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

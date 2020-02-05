@@ -1,0 +1,20 @@
+.aboutUs{
+    padding: 4%;
+    text-align: left;
+    line-height: 1.2em;
+}
+
+
+table{
+    width: 100%;
+    border: 1px solid;
+    text-align: left;
+}
+thead > tr {
+    font-weight: 800;
+    background-color: cornflowerblue;
+}
+table > tr,td {
+    text-align: left;
+    border-bottom: 1px solid black;
+}

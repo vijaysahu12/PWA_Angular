@@ -1,0 +1,21 @@
+<section class="pageContainer">
+
+  <section class="taskContainer">
+    <main>
+      <ul class="listOfToDo">
+        <li *ngFor="let item of ToDoArray">
+          {{item.Description}}
+        </li>
+      </ul>
+    </main>
+  </section>
+
+  <article>
+    <div class="footerContainer">
+      <textarea [formControl]="description" placeholder="Add your ToDo item...">
+  </textarea>
+      <button class="btnAdd" (click)="AddToDoItem()"> Add </button>
+    </div>
+  </article>
+
+</section>

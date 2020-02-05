@@ -1,0 +1,26 @@
+<section class="appContainer">
+  <header class="appHeader">
+    <nav class="navigation">
+      <div>
+        <div class="buttonContainer" [ngStyle]="{'opacity': isNavVisible === true ? 1 : 0.5} ">
+          <!-- <button (click)="ShowHideBar()" class="hamburger"> Menu </button> -->
+          <button (click)="ShowHideBar()" class="sidenav-toggle">
+            <div class="hamburger"></div>
+          </button>
+        </div>
+      
+      </div>
+      <div class="navHeading"> <strong> {{pageHeading}} </strong> </div>
+    </nav>
+  </header>
+  <main class="appMain">
+    <router-outlet></router-outlet>
+  </main>
+</section>
+
+<ul class="navigationlist" *ngIf="isNavVisible">
+  <li (click)='ShowHideBar("dashboard")' routerLink="/home">Dashboard</li>
+  <li (click)='ShowHideBar("todo")' routerLink="/todo">To-Do </li>
+  <li (click)='ShowHideBar("about")' routerLink="/about">About</li>
+  <li (click)='ShowHideBar("contact")' routerLink="/contact">Contact</li>
+</ul>
