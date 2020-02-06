@@ -4,17 +4,29 @@
 }
 
 
-.igFrameBar {
+.BarContainer {
   content: "";
   height: 650px;
   position: relative;
   border: 2px solid black;
   background: #f2f2f2;
   border-radius: 4px;
+  overflow-x: auto;
 }
-.igFrameBarBottom {
+.BarContainerBottom {
   display: flex;
   flex-direction: row;
+}
+
+.BarContainerX {
+    height: 650px;
+    position: absolute;
+    border: 2px solid black;
+    background: #f2f2f2;
+    border-radius: 4px;
+    border: 17px solid red;
+    width: 1px;
+    margin-left: -3px;
 }
 
 .EmpNameContainer{
@@ -26,7 +38,7 @@
   margin-left: 8px;
 
 }
-.igFrameBar:before {
+.BarContainer:before {
   content: "";
   width: 100%;
   height: 1px;
@@ -35,7 +47,7 @@
   top: 50%;
 }
 
-.igFrameBar:after {
+.BarContainer:after {
   content: "";
   width: 100%;
   height: 50%;
@@ -45,6 +57,26 @@
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
+
+
+.x-10 ,
+.x-9 ,
+.x-8 ,
+.x-7 ,
+.x-6 ,
+.x-5 ,
+.x-4 ,
+.x-3 ,
+.x-2 ,
+.x-1 ,
+.x-0 {
+  color: black;
+  width: 10px;
+  margin: 0px -50px;
+  height: 10%;
+}
+
+
 
 .igData {
   width: 2%;

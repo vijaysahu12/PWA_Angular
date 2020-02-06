@@ -1,5 +1,5 @@
 <!-- <div class="container">
-  <div class="igFrameBar">
+  <div class="BarContainer">
     <div class="igData igData1"></div>
     <div class="igData igData2"></div>
     <div class="igData igData3"></div>
@@ -17,7 +17,20 @@
 
 <div class="container">
 
-  <div class="igFrameBar"  [@ChartBottomTop]>
+  <div class="BarContainerX">
+    <div class="x-10">100</div>
+    <div class="x-9">90</div>
+    <div class="x-8">80</div>
+    <div class="x-7">70</div>
+    <div class="x-6">60</div>
+    <div class="x-5">50</div>
+    <div class="x-4">40</div>
+    <div class="x-3">30</div>
+    <div class="x-2">20</div>
+    <div class="x-1">10</div>
+    <div class="x-0">0</div>
+  </div>
+  <div class="BarContainer"  [@ChartBottomTop]>
     <div 
     *ngFor="let bar of ChartData"
     class="igData"
@@ -30,7 +43,7 @@
     <!-- <div class="bottomValueOfBar">{{bar.EmployeeName}}</div> -->
     </div>
   </div>
-  <!-- <div class="igFrameBarBottom">
+  <!-- <div class="BarContainerBottom">
     <div [style.margin-left]='0' class="EmpNameContainer" *ngFor="let bar of ChartData">
     {{bar.EmployeeName}}
     </div>
